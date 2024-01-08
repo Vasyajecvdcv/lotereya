@@ -3,11 +3,11 @@ from PyQt5.QtWidgets import*
 from random import randint
 
 def generate():
-    n=randint(0,9)
-    number1.setText(str(n))
-    n=randint(0,9)
-    number2.setText(str(n))
-    if number1==number2:
+    n1=randint(0,9)
+    number1.setText(str(n1))
+    n2=randint(0,9)
+    number2.setText(str(n2))
+    if n1==n2:
         text.setText('Ви виграли! Зіграйте знову')
     else:
         text.setText('Ви програли! Зіграйте знову')
